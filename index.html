@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="nombre">
+      <h1 class="ing">INGENIEROS</h1>
+    </div>
+    <div class="botones">
+      <button class="btn" onclick="scrollToSection('inicio')">Inicio</button>
+      <button class="btn" onclick="scrollToSection('sobre-mi')">Sobre mí</button>
+      <button class="btn" onclick="scrollToSection('proyectos')">Proyectos</button>
+      <button class="btn" onclick="scrollToSection('habilidades')">Habilidades</button>
+      <button class="btn" onclick="scrollToSection('contacto')">Contactos</button>
+    </div>
+  </header>
+
+  <!-- INICIO -->
+  <div id="inicio" class="inicio">
+    <div class="hi">
+      <h6>UI/UX DESIGNS</h6>
+      <h3>HOLA SOY GOKU</h3>
+      <h6>Desarrollador web</h6>
+    </div>
+    <div class="foto1">
+      <img src="imagenes/images (1).jpeg" alt="" />
+    </div>
+  </div>
+
+  <!-- SOBRE MÍ -->
+  <div id="sobre-mi" class="aboutme">
+    <div class="foto2">
+      <img src="imagenes/images (2).jpeg" alt="" />
+    </div>
+    <div class="biografia-y-cards">
+      <div class="biografia">
+        <h1 class="ing">SOBRE MI</h1>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit ut? Doloremque atque unde totam aspernatur optio hic saepe, aut mollitia rerum tempora delectus id non tenetur sunt consequatur aliquid?</h6>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-inner">
+            <div class="front"><h3>Habilidades</h3></div>
+            <div class="back"><h3>Manejo en: PHP, JAVA SCRIPT, PYTHON</h3></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="front"><h3>Experiencia</h3></div>
+            <div class="back"><h3>Desarrollador web principal de Kamehouse</h3></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="front"><h3>Educación</h3></div>
+            <div class="back"><h3>Jarbar Unybersiti</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="galeria-proyectos">
+    <h2 class="titulo-seccion">Proyectos</h2>
+    <div class="proyectos-grid">
+      <div class="proyecto-card">
+        <img src="imagenes/imagenes(4).jpg" alt="Proyecto 1" class="proyecto-imagen" />
+        <div class="proyecto-info">
+          <h3>CREACIÓN DE INTERFACE</h3>
+          <p>Creación de interfaces para distintas páginas web de su gusto.</p>
+        </div>
+      </div>
+      <div class="proyecto-card">
+        <img src="imagenes (3).png" alt="Proyecto 2" class="proyecto-imagen" />
+        <div class="proyecto-info">
+          <h3>DESARROLLO WEB</h3>
+          <p>Realizamos desarrollo web para fines de promoción y mucho más.</p>
+        </div>
+      </div>
+      <div class="proyecto-card">
+        <img src="imagenes/imagene(5).jpg" alt="Proyecto 3" class="proyecto-imagen" />
+        <div class="proyecto-info">
+          <h3>APP CONTADOR</h3>
+          <p>Proyecto generado con financieros para un contador.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="habilidades-section">
+    <h2 class="titulo-habilidades">Habilidades</h2>
+    <div class="habilidades-container">
+      <div class="habilidad-card">
+        <div class="habilidad-logo">
+          <i class="fab fa-php"></i>
+        </div>
+        <h3 class="habilidad-nombre">PHP</h3>
+      </div>
+      <div class="habilidad-card">
+        <div class="habilidad-logo">
+          <i class="fab fa-python"></i>
+        </div>
+        <h3 class="habilidad-nombre">Python</h3>
+      </div>
+      <div class="habilidad-card">
+        <div class="habilidad-logo">
+          <i class="fab fa-js"></i>
+        </div>
+        <h3 class="habilidad-nombre">JavaScript</h3>
+      </div>
+      <div class="habilidad-card">
+        <div class="habilidad-logo">
+          <i class="fab fa-java"></i>
+        </div>
+        <h3 class="habilidad-nombre">Java</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto-section">
+    <div class="contacto-header">
+      <h2 class="titulo-contacto">CONTACTO</h2>
+      <div class="formulario-contacto">
+        <form class="contact-form" action="https://formsubmit.co/joshlynsoza@gmail.com" method="POST">
+          <div class="form-group">
+            <input type="text" name="nombre" placeholder="Nombre" required class="input-field" />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Correo Electrónico" required class="input-field" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensaje" name="mensaje" rows="5" required class="input-field textarea-field"></textarea>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false">
+
+          
+
+          <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+        </form>
+      </div>
+    </div>
+    <div class="info-contacto">
+      <div class="contacto-item">
+        <i class="fas fa-phone contacto-icono"></i>
+        <p class="contacto-texto">+1 234 567 890</p>
+      </div>
+      <div class="contacto-item">
+        <i class="fas fa-envelope contacto-icono"></i>
+        <p class="contacto-texto">Goku25@gmail.com</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="funciones.js"></script>
+</body>
+</html>
